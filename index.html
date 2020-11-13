@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Scootrix : electric scooters" />
+  <meta name="author" content="Pierre Lovergne" />
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <title>Scootrix</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" class="nav-bar">
+      <div class="brand">
+        <h1 id="brand-name" class="brand__title">Scootrix</h1>
+        <img id="header-img" class="brand__logo anim-scooter filter-logo"
+          src="https://cdn.glitch.com/21e0c8ef-fdef-4fc5-802d-dccc3ab35d22%2F001-kick-scooter.svg?v=1584048647818"
+          alt="logo" />
+      </div>
+      <div class="menu">
+        <a class="nav-link nav-bar__link" href="#features">Features</a>
+        <a class="nav-link nav-bar__link" href="#to-use">How to use it</a>
+        <a class="nav-link nav-bar__link" href="#price">Price</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="features" class="features">
+      <div class="features__reliable">
+        <div>
+          <img class="features__logo features__logo--reliable filter-logo"
+            src="https://cdn.glitch.com/21e0c8ef-fdef-4fc5-802d-dccc3ab35d22%2F008-security-purposes.svg?v=1584048673194" />
+          <h3 class="features__title features__title--reliable">Reliable</h3>
+        </div>
+        <p>
+          Phasellus imperdiet porta turpis et ultricies. Donec hendrerit
+          mollis est, eget porta purus auctor id. Sed tincidunt quam nec nunc
+          molestie, eu interdum urna tincidunt. Integer pulvinar placerat
+          dolor. Aliquam tincidunt augue at nunc ultricies efficitur.
+          Pellentesque efficitur eleifend ante et imperdiet. Donec mollis
+          massa quam, in porttitor arcu posuere eget.
+        </p>
+      </div>
+      <div class="features__battery">
+        <div>
+          <img class="features__logo features__logo--battery filter-logo"
+            src="https://cdn.glitch.com/21e0c8ef-fdef-4fc5-802d-dccc3ab35d22%2F006-battery.svg?v=1584048667503" />
+          <h3 class="features__title features__title--battery">Autonomy</h3>
+        </div>
+        <p>
+          Phasellus imperdiet porta turpis et ultricies. Donec hendrerit
+          mollis est, eget porta purus auctor id. Sed tincidunt quam nec nunc
+          molestie, eu interdum urna tincidunt. Integer pulvinar placerat
+          dolor. Aliquam tincidunt augue at nunc ultricies efficitur.
+          Pellentesque efficitur eleifend ante et imperdiet. Donec mollis
+          massa quam, in porttitor arcu posuere eget.
+        </p>
+      </div>
+      <div class="features__speed">
+        <div>
+          <img class="features__logo features__logo--fast filter-logo"
+            src="https://cdn.glitch.com/21e0c8ef-fdef-4fc5-802d-dccc3ab35d22%2F007-fast.svg?v=1584048671130" />
+          <h3 class="features__title features__title--fast">Speed</h3>
+        </div>
+        <p>
+          Phasellus imperdiet porta turpis et ultricies. Donec hendrerit
+          mollis est, eget porta purus auctor id. Sed tincidunt quam nec nunc
+          molestie, eu interdum urna tincidunt. Integer pulvinar placerat
+          dolor. Aliquam tincidunt augue at nunc ultricies efficitur.
+          Pellentesque efficitur eleifend ante et imperdiet. Donec mollis
+          massa quam, in porttitor arcu posuere eget.
+        </p>
+      </div>
+    </div>
+    <div id="to-use">
+      <iframe id="video" class="video" width="560" height="315" src="https://www.youtube.com/embed/ZhOuZD85kcc"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div id="price" class="container">
+      <h2 class="container__pricing">Pricing</h2>
+      <div onclick="submitChoice()" class="price container__item container__item--1">
+        <h3 class="container__item--title">Casual</h3>
+        <h3 class="container__item--price">$399.98</h3>
+        <p class="container__item--content italic">
+          Phasellus imperdiet porta turpis et ultricies porta turpis et
+          ultricies
+        </p>
+        <!-- <button class="container__item--button" value="select">Select</button> -->
+      </div>
+      <div onclick="submitChoice()" class="price container__item container__item--2">
+        <h3 class="container__item--title">Lorem</h3>
+        <h3 class="container__item--price">$599.98</h3>
+        <p class="container__item--content italic">Phasellus imperdiet</p>
+        <!-- <button class="container__item--button" value="select">Select</button> -->
+      </div>
+      <div onclick="submitChoice()" class="price container__item container__item--3">
+        <h3 class="container__item--title">Sport</h3>
+        <h3 class="container__item--price">$799.98</h3>
+        <p class="container__item--content italic">
+          Phasellus imperdiet porta turpis et ultricies
+        </p>
+        <!-- <button class="container__item--button" value="select">Select</button> -->
+      </div>
+    </div>
+    <div class="form">
+      <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+        <h5>
+          If you want to know about promotions and new products, suscribe to
+          the Newsletter :
+        </h5>
+        <input id="email" type="email" name="email" placeholder="enter your email" />
+        <input id="submit" type="submit" value="submit" />
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a class="nav-bar__bottom" href="#">Terms</a>
+      <a class="nav-bar__bottom" href="#">Contact</a>
+      <a class="nav-bar__bottom" href="#">Policy</a>
+    </div>
+    <p style="text-align: center;">
+      &copy; Copyright 2020 - Scootrix <br />
+      Icons made by
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </p>
+  </footer>
+</body>
+
+</html>
